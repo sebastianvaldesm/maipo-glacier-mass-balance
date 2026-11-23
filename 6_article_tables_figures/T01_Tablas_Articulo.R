@@ -3,9 +3,9 @@
 # Uso: Rscript T01_Tablas_Articulo.R
 # Sale: tablas/Tablas_Articulo.xlsx, tablas.json y cifras_resultados.json
 suppressPackageStartupMessages({ library(jsonlite); library(writexl) })
-base <- "C:/Users/sebas/OneDrive/Desktop/Memoria de Titulo"
+base <- "C:/maipo/proyecto"
 AQUI <- file.path(base, "06_Memoria_Final", "Tablas_Figuras_Articulo")
-RAMA <- "C:/Users/sebas/Prueba_MMASTER/cadena_propia/gdem_cpd/tablas"
+RAMA <- "C:/maipo/trabajo/cadena_propia/gdem_cpd/tablas"
 TR <- file.path(base, "06_Memoria_Final", "Tramos_2010")
 dir.create(file.path(AQUI, "tablas"), showWarnings = FALSE)
 leer <- function(f, d = RAMA) read.csv(file.path(d, f), stringsAsFactors = FALSE, check.names = FALSE)

@@ -5,7 +5,7 @@
 # Uso: Rscript I04_Tabla3_Recortados.R
 # Sale: tablas/Tabla3_recortada.csv (una fila por grupo y variable, ya formateada) y
 #       tablas/Resumen_Inventarios_Recortados.csv (cifras para el texto)
-base <- "C:/Users/sebas/OneDrive/Desktop/Memoria de Titulo"
+base <- "C:/maipo/proyecto"
 aqui <- file.path(base, "06_Memoria_Final", "Inventarios_Recortados")
 RHO <- 850; S_RHO <- 60; S_AREA <- 0.05
 GR_ES <- c("Cuenca alta del Maipo", "Mapocho", "Olivares", "Colorado", "Yeso", "Volcán", "Cabecera del Maipo")
@@ -21,7 +21,7 @@ pm <- function(x, e, d = 2, mas = FALSE) paste0(f2(x, d, mas), " \u00B1 ", forma
 # inventario nacional: lo mismo que lee T01
 TT <- read.csv(file.path(base, "06_Memoria_Final/Tramos_2010/Tramos_2010_Cuenca_Grupos.csv"), encoding = "UTF-8")
 TT <- TT[TT$corte == 2010.5, ]
-A0 <- read.csv("C:/Users/sebas/Prueba_MMASTER/cadena_propia/gdem_cpd/tablas/M06_Agregados.csv", encoding = "UTF-8")
+A0 <- read.csv("C:/maipo/trabajo/cadena_propia/gdem_cpd/tablas/M06_Agregados.csv", encoding = "UTF-8")
 # RGI recortados: I03
 A1 <- read.csv(file.path(aqui, "corte_2010.5/tablas/M06_Agregados.csv"), encoding = "UTF-8")
 

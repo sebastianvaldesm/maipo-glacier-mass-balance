@@ -5,7 +5,7 @@
 
 suppressPackageStartupMessages(library(terra))
 
-base <- "C:/Users/sebas/OneDrive/Desktop/Memoria de Titulo"
+base <- "C:/maipo/proyecto"
 ART  <- file.path(base, "06_Memoria_Final", "Tablas_Figuras_Articulo")
 f_ipg <- file.path(base, "01_Datos/Brutos/Inventario_DGA/IPG_2014",
                    "Inventario Publico de Glaciares 2014", "IPG_2014", "IPG_2014.shp")

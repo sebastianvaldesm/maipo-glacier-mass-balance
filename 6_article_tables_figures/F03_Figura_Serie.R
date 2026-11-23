@@ -2,9 +2,9 @@
 # con la mediana y los percentiles 25 y 75 de los glaciares ponderados por area, y el balance de los
 # dos periodos.
 # Sale: figuras/Figura3_serie.png y .jpg
-base <- "C:/Users/sebas/OneDrive/Desktop/Memoria de Titulo"
+base <- "C:/maipo/proyecto"
 AQUI <- file.path(base, "06_Memoria_Final", "Tablas_Figuras_Articulo")
-RAMA <- "C:/Users/sebas/Prueba_MMASTER/cadena_propia/gdem_cpd/tablas"
+RAMA <- "C:/maipo/trabajo/cadena_propia/gdem_cpd/tablas"
 leer <- function(f, d = RAMA) read.csv(file.path(d, f), stringsAsFactors = FALSE)
 azul <- "#1B4F72"; gris <- "#55606B"
 COL_G <- c("Maipo basin" = "gray25", "Mapocho" = "#009E73", "Olivares" = "#E69F00", "Colorado" = "#CC79A7", "Yeso" = "#56B4E9",

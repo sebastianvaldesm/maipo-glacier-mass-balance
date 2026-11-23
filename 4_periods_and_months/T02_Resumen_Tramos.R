@@ -6,9 +6,9 @@ options(width = 250)
 args  <- commandArgs(trailingOnly = TRUE)
 nrama <- if (length(args)) args[1] else "gdem_cpd"
 if (!nrama %in% c("gdem_cpd", "tdx90_cpd")) stop("Uso: Rscript T02_Resumen_Tramos.R [gdem_cpd|tdx90_cpd]")
-aqui <- "C:/Users/sebas/OneDrive/Desktop/Memoria de Titulo/06_Memoria_Final/Tramos_2010"
+aqui <- "C:/maipo/proyecto/06_Memoria_Final/Tramos_2010"
 if (nrama != "gdem_cpd") aqui <- file.path(aqui, nrama)
-rama <- file.path("C:/Users/sebas/Prueba_MMASTER/cadena_propia", nrama, "tablas")
+rama <- file.path("C:/maipo/trabajo/cadena_propia", nrama, "tablas")
 GR <- c("Cuenca alta del Maipo", "Maipo | Mapocho", "Maipo | Olivares", "Maipo | Colorado", "Maipo | Yeso",
         "Maipo | Volcán", "Maipo | Cabecera del Maipo")
 leer <- function(d) {

@@ -6,9 +6,9 @@
 # Uso: Rscript P14_franjas_enero_abril.R
 # Sale: resultados/P14_franjas_nuevas.csv (la lista para P05f) y P14_franjas_usadas.csv
 suppressPackageStartupMessages(library(terra))
-B <- "C:/Users/sebas/OneDrive/Desktop/Memoria de Titulo"
+B <- "C:/maipo/proyecto"
 R <- file.path(B, "03_DEM_MicMac/resultados")
-M <- "C:/Users/sebas/Prueba_MMASTER"
+M <- "C:/maipo/trabajo"
 MESES <- 1:4
 
 g <- vect(file.path(M, "referencia/rgi60_cuenca.shp"))

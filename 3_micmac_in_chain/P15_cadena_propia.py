@@ -20,7 +20,7 @@ Uso: python P15_cadena_propia.py <rama> lista|pendientes|preparar
      python P15_cadena_propia.py <rama> M05cpd <parte> <de>
      python P15_cadena_propia.py <rama> combinar
      python P15_cadena_propia.py <rama>_cpd M05c
-Sale: C:/Users/sebas/Prueba_MMASTER/cadena_propia/<rama>/ (fuera de OneDrive)
+Sale: C:/maipo/trabajo/cadena_propia/<rama>/ (fuera de OneDrive)
 """
 
 import atexit
@@ -39,10 +39,10 @@ import shutil
 import numpy as np
 import pandas as pd
 
-RAIZ = r"C:\Users\sebas\OneDrive\Desktop\Memoria de Titulo"
+RAIZ = r"C:\maipo\proyecto"
 CADENA = os.path.join(RAIZ, "02_Balance_Masa_RM", "Cadena_RM")
 PRUEBA = os.path.join(RAIZ, "03_DEM_MicMac")
-MM = r"C:\Users\sebas\Prueba_MMASTER"
+MM = r"C:\maipo\trabajo"
 SALIDA = os.environ.get("P15_RAIZ", os.path.join(MM, "cadena_propia"))
 COMUN = os.path.join(MM, "cadena_propia", "comun")
 BASES = {"gdem": "MascaraEstable_RM_ASTER", "tdx90": "MascaraEstable_RM_TDX90", "tdx30": "MascaraEstable_RM_TDX30"}

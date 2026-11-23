@@ -15,7 +15,7 @@ import os
 import runpy
 import sys
 
-RAIZ = r"C:\Users\sebas\OneDrive\Desktop\Memoria de Titulo"
+RAIZ = r"C:\maipo\proyecto"
 AQUI = os.path.join(RAIZ, "06_Memoria_Final", "Inventarios_Recortados")
 DATOS = os.path.join(AQUI, "datos")
 TABLAS = os.path.join(AQUI, "tablas")

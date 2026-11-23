@@ -4,10 +4,10 @@
 # hipsometrias, y escribe aqui. El inventario nacional tiene que dar lo mismo que Tramos_2010/corte_2010.5.
 # Uso: Rscript I03_M06_Recortados.R
 # Sale: corte_2010.5/tablas/ y corte_2010.5/M06_resultados.rds
-aqui   <- "C:/Users/sebas/OneDrive/Desktop/Memoria de Titulo/06_Memoria_Final/Inventarios_Recortados"
-raiz_t <- "C:/Users/sebas/OneDrive/Desktop/Memoria de Titulo/06_Memoria_Final/Tramos_2010"
-cadena <- "C:/Users/sebas/OneDrive/Desktop/Memoria de Titulo/02_Balance_Masa_RM/Cadena_RM"
-rama   <- "C:/Users/sebas/Prueba_MMASTER/cadena_propia/gdem_cpd"
+aqui   <- "C:/maipo/proyecto/06_Memoria_Final/Inventarios_Recortados"
+raiz_t <- "C:/maipo/proyecto/06_Memoria_Final/Tramos_2010"
+cadena <- "C:/maipo/proyecto/02_Balance_Masa_RM/Cadena_RM"
+rama   <- "C:/maipo/trabajo/cadena_propia/gdem_cpd"
 salida <- file.path(aqui, "corte_2010.5")
 dir_t  <- file.path(salida, "tablas")
 dir.create(dir_t, showWarnings = FALSE, recursive = TRUE)

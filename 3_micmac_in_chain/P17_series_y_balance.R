@@ -9,9 +9,9 @@ bases <- c(gdem = "MascaraEstable_RM_ASTER", tdx90 = "MascaraEstable_RM_TDX90", 
 # la combinacion con CPD usa la base de su rama
 bases <- c(bases, setNames(bases, paste0(names(bases), "_cpd")))
 if (!rama %in% names(bases)) stop("Uso: Rscript P17_series_y_balance.R gdem|tdx90|tdx30 (o <rama>_cpd)")
-raiz <- Sys.getenv("P15_RAIZ", "C:/Users/sebas/Prueba_MMASTER/cadena_propia")
+raiz <- Sys.getenv("P15_RAIZ", "C:/maipo/trabajo/cadena_propia")
 dir_rama <- gsub("\\\\", "/", file.path(raiz, rama))
-cadena <- "C:/Users/sebas/OneDrive/Desktop/Memoria de Titulo/02_Balance_Masa_RM/Cadena_RM"
+cadena <- "C:/maipo/proyecto/02_Balance_Masa_RM/Cadena_RM"
 if (!file.exists(file.path(dir_rama, "tablas", "M05c_Serie.csv"))) stop("Falta M05c de la rama: ", dir_rama)
 dir.create(file.path(dir_rama, "tex"), showWarnings = FALSE)
 Sys.setenv(CADENA_RM_SUFIJO = "", CADENA_RM_SALIDA = "M05_salida")

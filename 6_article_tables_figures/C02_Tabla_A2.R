@@ -3,13 +3,13 @@
 # Junta las corridas de C01 (versiones anteriores), la metodologia final y su variante con dos rectas
 # separadas (Tramos_2010), y la rama con el TanDEM-X de 90 m con CPD. Todas con error por remuestreo de
 # escenas; los periodos con la recta quebrada en 2010,5, salvo la fila de dos rectas separadas.
-# Entra: C:/Users/sebas/Prueba_MMASTER/metodologias_m06/<metodologia>/tablas y 06_Memoria_Final/Tramos_2010
+# Entra: C:/maipo/trabajo/metodologias_m06/<metodologia>/tablas y 06_Memoria_Final/Tramos_2010
 # Sale:  Tabla_A2_Metodologias.csv
 # Uso:   Rscript C02_Tabla_A2.R
 
-base <- "C:/Users/sebas/OneDrive/Desktop/Memoria de Titulo"
+base <- "C:/maipo/proyecto"
 TR <- file.path(base, "06_Memoria_Final", "Tramos_2010")
-M  <- "C:/Users/sebas/Prueba_MMASTER/metodologias_m06"
+M  <- "C:/maipo/trabajo/metodologias_m06"
 
 filas <- data.frame(
   metodologia = c("AST_13M_ALT50", "AST_13M", "AST_NKD", "MM_TDX90_13M", "MM_TDX90_CPD", "MM_GDEM_13M",

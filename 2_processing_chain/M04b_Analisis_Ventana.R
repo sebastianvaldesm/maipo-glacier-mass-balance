@@ -3,7 +3,7 @@
 # Sale: tablas/M04_Ventanas*.csv y M04_Placebo_*.csv
 
 suppressPackageStartupMessages(library(terra))
-base    <- "C:/Users/sebas/OneDrive/Desktop/Memoria de Titulo"
+base    <- "C:/maipo/proyecto"
 dir_c   <- file.path(base, "02_Balance_Masa_RM", "Cadena_RM")
 dir_tab <- file.path(dir_c, "tablas")
 

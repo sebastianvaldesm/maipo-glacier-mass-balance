@@ -4,7 +4,7 @@ V01. Prueba de los meses: repite M05c de la rama MicMac + GDEM con CPD usando so
 mes, de marzo y abril, o todas sin la regla de temporada. No vuelve a alinear: enlaza el M05_salida
 de la rama.
 Uso: python V01_M05c_Meses.py <variante>
-Sale: C:/Users/sebas/Prueba_MMASTER/variantes_meses_mm/<variante>/tablas/
+Sale: C:/maipo/trabajo/variantes_meses_mm/<variante>/tablas/
 """
 import ctypes
 import glob
@@ -15,9 +15,9 @@ import sys
 
 MESES = {"solo_enero": [1], "solo_febrero": [2], "solo_marzo": [3], "solo_abril": [4],
          "solo_marzo_abril": [3, 4], "todos_los_meses": [1, 2, 3, 4]}
-RAMA = r"C:\Users\sebas\Prueba_MMASTER\cadena_propia\gdem_cpd"
-P15 = r"C:\Users\sebas\OneDrive\Desktop\Memoria de Titulo\03_DEM_MicMac\scripts\P15_cadena_propia.py"
-RAIZ_V = r"C:\Users\sebas\Prueba_MMASTER\variantes_meses_mm"
+RAMA = r"C:\maipo\trabajo\cadena_propia\gdem_cpd"
+P15 = r"C:\maipo\proyecto\03_DEM_MicMac\scripts\P15_cadena_propia.py"
+RAIZ_V = r"C:\maipo\trabajo\variantes_meses_mm"
 
 if len(sys.argv) != 2 or sys.argv[1] not in MESES:
     sys.exit(__doc__)

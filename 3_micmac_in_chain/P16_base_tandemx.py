@@ -20,12 +20,12 @@ from rasterio.enums import Resampling
 from rasterio.merge import merge
 from rasterio.warp import reproject
 
-RAIZ = r"C:\Users\sebas\OneDrive\Desktop\Memoria de Titulo"
+RAIZ = r"C:\maipo\proyecto"
 D90 = os.path.join(RAIZ, "01_Datos", "Brutos", "TanDEM-X_90m")
 D30 = os.path.join(RAIZ, "01_Datos", "Brutos", "TanDEM-X_30m_EDEM")
 GDEM = os.path.join(RAIZ, "01_Datos", "Mascara_Estable", "MascaraEstable_RM_ASTER")
 RES = os.path.join(RAIZ, "03_DEM_MicMac", "resultados")
-F_N96 = r"C:\Users\sebas\Prueba_MMASTER\referencia\ondulacion_EGM96.tif"
+F_N96 = r"C:\maipo\trabajo\referencia\ondulacion_EGM96.tif"
 F_INV = os.path.join(RAIZ, "01_Datos", "Procesados", "Inventarios_UTM19S", "Inventarios_RM_ASTER.gpkg")
 F_TASA = os.path.join(RAIZ, "02_Balance_Masa_RM", "Cadena_RM", "tablas", "M06_Tasa_por_Glaciar.csv")
 TESELAS = ["S33W071", "S33W070", "S34W071", "S34W070", "S35W071", "S35W070"]

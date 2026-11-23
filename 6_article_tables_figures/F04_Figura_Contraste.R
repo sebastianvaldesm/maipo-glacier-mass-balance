@@ -1,9 +1,9 @@
 # F04. Figura 5 del articulo: contraste glaciar por glaciar con Dussaillant et al. (2019) y Hugonnet et
 # al. (2021), y por subcuenca con Farias-Barahona et al. (2020).
 # Sale: figuras/Figura5_contraste.png y .jpg
-base <- "C:/Users/sebas/OneDrive/Desktop/Memoria de Titulo"
+base <- "C:/maipo/proyecto"
 AQUI <- file.path(base, "06_Memoria_Final", "Tablas_Figuras_Articulo")
-RAMA <- "C:/Users/sebas/Prueba_MMASTER/cadena_propia/gdem_cpd/tablas"
+RAMA <- "C:/maipo/trabajo/cadena_propia/gdem_cpd/tablas"
 leer <- function(f) read.csv(file.path(RAMA, f), stringsAsFactors = FALSE, check.names = FALSE)
 azul <- "#1B4F72"; gris <- "#55606B"
 COL_G <- c("Mapocho" = "#009E73", "Olivares" = "#E69F00", "Colorado" = "#CC79A7", "Yeso" = "#56B4E9",

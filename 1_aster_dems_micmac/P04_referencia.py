@@ -15,7 +15,7 @@ from shapely.geometry import box
 
 out = sys.argv[1]
 os.makedirs(out, exist_ok=True)
-B = "C:/Users/sebas/OneDrive/Desktop/Memoria de Titulo"
+B = "C:/maipo/proyecto"
 UTM = "EPSG:32719"
 LON0, LAT0, LON1, LAT1 = -71.0, -35.0, -69.0, -32.0       # extension de las franjas (180 km N-S, 60 km E-O)
 ZONA = (-70.05, -33.80, -69.82, -33.66)                    # zona de prueba Volcan-Marmolejo (lon/lat)

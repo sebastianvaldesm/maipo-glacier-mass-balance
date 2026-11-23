@@ -9,7 +9,7 @@
 #
 # Sale: 01_Datos/Brutos/ASTER_GDEM_V3/
 
-base    <- "C:/Users/sebas/OneDrive/Desktop/Memoria de Titulo"
+base    <- "C:/maipo/proyecto"
 destino <- file.path(base, "01_Datos/Brutos", "ASTER_GDEM_V3")
 dir.create(destino, recursive = TRUE, showWarnings = FALSE)
 

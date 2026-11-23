@@ -3,9 +3,9 @@
 # Cada linea es la mediana de los glaciares ponderada por area; los anos en que se observa menos del 70 %
 # del area del grupo van como punto vacio y la linea no pasa por ellos (igual que en F03).
 # Sale: figuras/Figura4_serie_unida.png y .jpg (16 x 11 cm, 300 dpi)
-base <- "C:/Users/sebas/OneDrive/Desktop/Memoria de Titulo"
+base <- "C:/maipo/proyecto"
 AQUI <- file.path(base, "06_Memoria_Final", "Tablas_Figuras_Articulo")
-RAMA <- "C:/Users/sebas/Prueba_MMASTER/cadena_propia/gdem_cpd/tablas"
+RAMA <- "C:/maipo/trabajo/cadena_propia/gdem_cpd/tablas"
 leer <- function(f, d = RAMA) read.csv(file.path(d, f), stringsAsFactors = FALSE)
 gris <- "#55606B"
 COL_G <- c("Maipo basin" = "black", "Mapocho" = "#009E73", "Olivares" = "#E69F00", "Colorado" = "#CC79A7", "Yeso" = "#56B4E9",

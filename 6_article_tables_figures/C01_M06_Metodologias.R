@@ -6,12 +6,12 @@
 #   MM_TDX90_13M   MicMac alineado al TanDEM-X de 90 m, trece variantes
 #   MM_GDEM_13M    MicMac alineado al GDEM, trece variantes (la final suma CPD)
 # Uso: Rscript C01_M06_Metodologias.R <metodologia>     (despues C02_Tabla_A2.R)
-# Sale: C:/Users/sebas/Prueba_MMASTER/metodologias_m06/<metodologia>/
+# Sale: C:/maipo/trabajo/metodologias_m06/<metodologia>/
 args <- commandArgs(trailingOnly = TRUE)
-RAIZ   <- "C:/Users/sebas/OneDrive/Desktop/Memoria de Titulo"
+RAIZ   <- "C:/maipo/proyecto"
 cadena <- file.path(RAIZ, "02_Balance_Masa_RM", "Cadena_RM")
-MM     <- "C:/Users/sebas/Prueba_MMASTER/cadena_propia"
-VAR    <- "C:/Users/sebas/Prueba_MMASTER/variantes_m05c"
+MM     <- "C:/maipo/trabajo/cadena_propia"
+VAR    <- "C:/maipo/trabajo/variantes_m05c"
 # metodologia = c(dir_c con M05_salida y M05b_salida, carpeta del M05c, nombre de M05_salida, mascara)
 DEF <- list(
   AST_13M       = c(cadena, file.path(RAIZ, "06_Memoria_Final/Metodologias_anteriores/datos/ast14dem/tablas"), "M05_salida", "ASTER"),
@@ -21,7 +21,7 @@ DEF <- list(
   MM_GDEM_13M   = c(file.path(MM, "gdem"), file.path(MM, "gdem", "tablas"), "M05_salida", "ASTER"))
 if (length(args) != 1 || !args[1] %in% names(DEF)) stop("Uso: Rscript C01_M06_Metodologias.R <", paste(names(DEF), collapse = "|"), ">")
 m <- args[1]; d <- DEF[[m]]
-out <- file.path("C:/Users/sebas/Prueba_MMASTER/metodologias_m06", m)
+out <- file.path("C:/maipo/trabajo/metodologias_m06", m)
 dir.create(file.path(out, "tablas"), showWarnings = FALSE, recursive = TRUE)
 if (!file.exists(file.path(d[2], "M05c_Serie.csv"))) stop("Falta M05c: ", d[2])
 if (!dir.exists(file.path(d[1], d[3]))) stop("Falta ", file.path(d[1], d[3]))

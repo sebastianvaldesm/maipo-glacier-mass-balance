@@ -3,7 +3,7 @@
 # Entra: M06_resultados.rds y el archivo por glaciar de Hugonnet (region 17, publicado por OGGM)
 # Sale: tablas/M06c_*.csv
 
-base    <- "C:/Users/sebas/OneDrive/Desktop/Memoria de Titulo"
+base    <- "C:/maipo/proyecto"
 dir_c   <- file.path(base, "02_Balance_Masa_RM", "Cadena_RM")
 dir_tab <- file.path(dir_c, "tablas")
 dir_tex <- file.path(base, "02_Balance_Masa_RM", "Reporte_1_RM", "tab")

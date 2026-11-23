@@ -22,7 +22,7 @@ import xdem
 
 warnings.filterwarnings("ignore")
 
-RAIZ = r"C:\Users\sebas\OneDrive\Desktop\Memoria de Titulo"
+RAIZ = r"C:\maipo\proyecto"
 DIR_BASE = os.path.join(RAIZ, "01_Datos/Mascara_Estable", "MascaraEstable_RM_ASTER")
 DIR_REG = os.path.join(RAIZ, "01_Datos/Brutos", "ASTER_Regional")
 F_INV = os.path.join(RAIZ, "01_Datos/Procesados", "Inventarios_UTM19S", "Inventarios_RM_ASTER.gpkg")

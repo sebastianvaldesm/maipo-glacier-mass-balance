@@ -10,7 +10,7 @@ import os
 import urllib.parse
 import urllib.request
 
-RAIZ = r"C:\Users\sebas\OneDrive\Desktop\Memoria de Titulo"
+RAIZ = r"C:\maipo\proyecto"
 DIR_OUT = os.path.join(RAIZ, "01_Datos/Brutos", "Cuencas_DGA")
 F_OUT = os.path.join(DIR_OUT, "SubSubCuencas_BNA_057_054_060.geojson")
 URL = ("https://services3.arcgis.com/aSoEm9TBK2shtWjP/arcgis/rest/services/"

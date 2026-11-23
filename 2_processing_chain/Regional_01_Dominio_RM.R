@@ -7,7 +7,7 @@
 
 suppressPackageStartupMessages(library(terra))
 
-base <- "C:/Users/sebas/OneDrive/Desktop/Memoria de Titulo"
+base <- "C:/maipo/proyecto"
 
 dir_inv    <- file.path(base, "01_Datos/Procesados", "Inventarios_UTM19S")
 dir_tablas <- file.path(base, "07_Avances_Reuniones", "Avance_Reunion_3",

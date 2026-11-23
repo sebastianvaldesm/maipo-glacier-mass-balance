@@ -11,7 +11,7 @@
 # Sale: tablas/M06_*.csv y M06_resultados.rds
 
 suppressPackageStartupMessages(library(terra))
-base    <- "C:/Users/sebas/OneDrive/Desktop/Memoria de Titulo"
+base    <- "C:/maipo/proyecto"
 dir_c   <- file.path(base, "02_Balance_Masa_RM", "Cadena_RM")
 dir_tab <- file.path(dir_c, "tablas")
 # Variantes: CADENA_RM_SUFIJO lee tablas/M05c_*<sufijo>.csv y escribe en

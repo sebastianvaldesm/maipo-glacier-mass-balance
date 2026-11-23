@@ -3,9 +3,9 @@
 #   B, linea de tiempo por carriles, una barra por estudio y periodo, coloreada por el balance;
 #   C, distribucion de los glaciares (violines partidos, ponderados por area) de cada estudio y este estudio.
 # Sale: figuras/Figura6_opcion_A.png, _B.png y _C.png (y .jpg).
-base <- "C:/Users/sebas/OneDrive/Desktop/Memoria de Titulo"
+base <- "C:/maipo/proyecto"
 AQUI <- file.path(base, "06_Memoria_Final", "Tablas_Figuras_Articulo")
-RAMA <- "C:/Users/sebas/Prueba_MMASTER/cadena_propia/gdem_cpd/tablas"
+RAMA <- "C:/maipo/trabajo/cadena_propia/gdem_cpd/tablas"
 leer <- function(f, d = RAMA) read.csv(file.path(d, f), stringsAsFactors = FALSE)
 si <- function(x) x %in% c(TRUE, "TRUE")
 gris <- "#55606B"; azul <- "#1B4F72"; pub <- "#8C8C8C"

@@ -11,10 +11,10 @@ corte <- if (length(args)) args[1] else "2010.5"
 nrama <- if (length(args) > 1) args[2] else "gdem_cpd"
 if (!corte %in% c("2010.5", "2010.0") || !nrama %in% c("gdem_cpd", "tdx90_cpd"))
   stop("Uso: Rscript T01_Tramos_2010.R [2010.5|2010.0] [gdem_cpd|tdx90_cpd]")
-raiz_t <- "C:/Users/sebas/OneDrive/Desktop/Memoria de Titulo/06_Memoria_Final/Tramos_2010"
+raiz_t <- "C:/maipo/proyecto/06_Memoria_Final/Tramos_2010"
 aqui   <- if (nrama == "gdem_cpd") file.path(raiz_t, paste0("corte_", corte)) else file.path(raiz_t, nrama, paste0("corte_", corte))
-cadena <- "C:/Users/sebas/OneDrive/Desktop/Memoria de Titulo/02_Balance_Masa_RM/Cadena_RM"
-rama   <- file.path("C:/Users/sebas/Prueba_MMASTER/cadena_propia", nrama)
+cadena <- "C:/maipo/proyecto/02_Balance_Masa_RM/Cadena_RM"
+rama   <- file.path("C:/maipo/trabajo/cadena_propia", nrama)
 dir_t  <- file.path(aqui, "tablas")
 dir.create(dir_t, showWarnings = FALSE, recursive = TRUE)
 if (!file.exists(file.path(rama, "tablas", "M05c_Serie.csv"))) stop("Falta M05c de la rama: ", rama)

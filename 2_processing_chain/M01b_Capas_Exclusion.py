@@ -20,7 +20,7 @@ from rasterio.warp import transform_bounds
 from rasterio.windows import from_bounds
 from shapely.geometry import LineString, Polygon, box
 
-RAIZ = r"C:\Users\sebas\OneDrive\Desktop\Memoria de Titulo"
+RAIZ = r"C:\maipo\proyecto"
 BRUTOS = os.path.join(RAIZ, "01_Datos/Brutos")
 AUX = os.path.join(RAIZ, "01_Datos/Capas_Auxiliares")
 F_GDEM = os.path.join(RAIZ, "01_Datos/Mascara_Estable", "MascaraEstable_RM_ASTER", "01_GDEM.tif")

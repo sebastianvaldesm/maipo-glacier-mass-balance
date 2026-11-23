@@ -32,15 +32,15 @@
 #  6. «Satelib ASTERStrip2MM» se escribe «SateLib» (MicMac no distingue mayúsculas en el comando).
 #  7. mm3d corre con un PATH que sólo tiene las carpetas de Windows: MicMac paraleliza con su make.exe, y si
 #     make encuentra el sh de Git Bash en el PATH lo usa como intérprete, que se come las barras invertidas
-#     de las rutas («C:UserssebasPrueba...: command not found»). Sin sh, make usa cmd.exe. Además se quita
+#     de las rutas («C:UsersusuarioPrueba...: command not found»). Sin sh, make usa cmd.exe. Además se quita
 #     la variable SHELL (Git Bash la exporta y el make de Windows también la obedece).
 #  8. Con un solo gránulo, los archivos se renombran a «FRANJA.<resto>» y no a los 25 primeros caracteres, para
 #     que la carpeta pueda llamarse como se quiera (con el nombre de Hugonnet el resultado es el mismo).
 #  9. La ortofoto V123 se lleva al tamaño de la máscara antes de enmascararla (resize_rasters del original).
 set -u
-MM3D=/c/Users/sebas/Prueba_MMASTER/herramientas/micmac_v11/bin/mm3d.exe
-E=/c/Users/sebas/miniconda3/envs/mmaster
-MOSAICO=/c/Users/sebas/Prueba_MMASTER/herramientas/mmaster_repo/MMASTER-workflows-master/bin/mosaic_micmac_tiles.py
+MM3D=/c/maipo/trabajo/herramientas/micmac_v11/bin/mm3d.exe
+E=/c/maipo/miniconda3/envs/mmaster
+MOSAICO=/c/maipo/trabajo/herramientas/mmaster_repo/MMASTER-workflows-master/bin/mosaic_micmac_tiles.py
 export PATH="$E/Library/bin:$E:$E/Scripts:$PATH" GDAL_DATA=$E/Library/share/gdal PROJ_DATA=$E/Library/share/proj
 gdal_calc() { "$E/python.exe" "$E/Scripts/gdal_calc.py" "$@"; }
 

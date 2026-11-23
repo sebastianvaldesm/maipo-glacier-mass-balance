@@ -3,7 +3,7 @@
 # Sale: 01_Hipsometria_union.csv y las de las diferencias, en la carpeta de la mascara.
 
 suppressPackageStartupMessages(library(terra))
-base    <- "C:/Users/sebas/OneDrive/Desktop/Memoria de Titulo"
+base    <- "C:/maipo/proyecto"
 dir_new <- file.path(base, "01_Datos/Mascara_Estable", "MascaraEstable_RM_ASTER")
 f_inv   <- file.path(base, "01_Datos/Procesados", "Inventarios_UTM19S", "Inventarios_RM_ASTER.gpkg")
 gdem <- rast(file.path(dir_new, "01_GDEM.tif"))

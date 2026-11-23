@@ -13,7 +13,7 @@
 suppressPackageStartupMessages(library(terra))
 terraOptions(progress = 0)
 
-base    <- "C:/Users/sebas/OneDrive/Desktop/Memoria de Titulo"
+base    <- "C:/maipo/proyecto"
 dir_g   <- file.path(base, "01_Datos/Brutos", "ASTER_GDEM_V3")
 dir_old <- file.path(base, "01_Datos/Mascara_Estable", "MascaraEstable_Regional")
 dir_new <- file.path(base, "01_Datos/Mascara_Estable", "MascaraEstable_RM_ASTER")

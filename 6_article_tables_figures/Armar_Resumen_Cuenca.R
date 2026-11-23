@@ -16,11 +16,11 @@
 # Sale: Resumen_Cuenca_Subcuencas_Piloto.csv
 options(stringsAsFactors = FALSE, warn = 1)
 suppressPackageStartupMessages(library(terra))
-RAIZ <- "C:/Users/sebas/OneDrive/Desktop/Memoria de Titulo"
+RAIZ <- "C:/maipo/proyecto"
 AQUI <- file.path(RAIZ, "06_Memoria_Final", "Metodologias_anteriores")
 TRES <- file.path(RAIZ, "06_Memoria_Final", "Metodologias_anteriores", "datos", "ast14dem", "tablas")
-MM   <- "C:/Users/sebas/Prueba_MMASTER/cadena_propia"
-VAR  <- "C:/Users/sebas/Prueba_MMASTER/variantes_m05c"
+MM   <- "C:/maipo/trabajo/cadena_propia"
+VAR  <- "C:/maipo/trabajo/variantes_m05c"
 INV  <- file.path(RAIZ, "01_Datos", "Procesados", "Inventarios_UTM19S")
 
 DIRS <- c(AST_13M_ALT50 = file.path(VAR, "AST_13M_ALT50"), AST_13M = TRES,

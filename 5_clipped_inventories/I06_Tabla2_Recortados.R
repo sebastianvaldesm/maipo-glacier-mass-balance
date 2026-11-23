@@ -3,7 +3,7 @@
 # inventario nacional se calculan igual desde la rama, para comprobar contra el Word.
 # Uso: Rscript I06_Tabla2_Recortados.R
 # Sale: tablas/Tabla2_recortada.csv
-base <- "C:/Users/sebas/OneDrive/Desktop/Memoria de Titulo"
+base <- "C:/maipo/proyecto"
 aqui <- file.path(base, "06_Memoria_Final", "Inventarios_Recortados")
 GR_ES <- c("Cuenca alta del Maipo", "Mapocho", "Olivares", "Colorado", "Yeso", "Volcán", "Cabecera del Maipo")
 GR_EN <- setNames(c("Maipo basin", "Mapocho", "Olivares", "Colorado", "Yeso", "Volcán", "Maipo headwaters"), GR_ES)
@@ -18,7 +18,7 @@ glaciares <- function(dir_tab_m06, dir_tab_m05c, cj) {
   G$n_fechas <- as.integer(n[paste(G$conjunto, G$gid)]); G$n_fechas[is.na(G$n_fechas)] <- 0L
   G
 }
-rama <- "C:/Users/sebas/Prueba_MMASTER/cadena_propia/gdem_cpd/tablas"
+rama <- "C:/maipo/trabajo/cadena_propia/gdem_cpd/tablas"
 L <- list(dga = glaciares(rama, rama, "dga"),
           rgi70 = glaciares(file.path(aqui, "corte_2010.5/tablas"), file.path(aqui, "tablas"), "rgi70"),
           rgi60 = glaciares(file.path(aqui, "corte_2010.5/tablas"), file.path(aqui, "tablas"), "rgi60"))

@@ -8,13 +8,13 @@
 #        copiadas sin cambios para M06) y datos/01_Hipsometria_rgi70.csv y _rgi60.csv (como M03).
 # Uso:   Rscript I01_Recortar_Inventarios.R
 suppressPackageStartupMessages(library(terra)); terraOptions(progress = 0)
-base  <- "C:/Users/sebas/OneDrive/Desktop/Memoria de Titulo"
+base  <- "C:/maipo/proyecto"
 aqui  <- file.path(base, "06_Memoria_Final", "Inventarios_Recortados")
 datos <- file.path(aqui, "datos"); dir.create(datos, showWarnings = FALSE, recursive = TRUE)
 f_inv <- file.path(base, "01_Datos/Procesados/Inventarios_UTM19S/Inventarios_RM_ASTER.gpkg")
 f_ssc <- file.path(base, "01_Datos/Brutos/Cuencas_DGA/SubSubCuencas_BNA_057_054_060.geojson")
 d_msk <- file.path(base, "01_Datos/Mascara_Estable/MascaraEstable_RM_ASTER")
-G     <- read.csv("C:/Users/sebas/Prueba_MMASTER/cadena_propia/gdem_cpd/tablas/M06_Tasa_por_Glaciar.csv")
+G     <- read.csv("C:/maipo/trabajo/cadena_propia/gdem_cpd/tablas/M06_Tasa_por_Glaciar.csv")
 f_out <- file.path(datos, "Inventarios_recortados.gpkg")
 if (file.exists(f_out) && !file.remove(f_out)) stop("No se pudo borrar ", f_out, " (cerrar QGIS)")
 

@@ -3,7 +3,7 @@
 # Sale: figuras/Figura1_zona.png y .jpg (16 cm de ancho, 300 dpi)
 suppressPackageStartupMessages({ library(terra); library(jsonlite) })
 terraOptions(progress = 0)
-base <- "C:/Users/sebas/OneDrive/Desktop/Memoria de Titulo"
+base <- "C:/maipo/proyecto"
 AQUI <- file.path(base, "06_Memoria_Final", "Tablas_Figuras_Articulo")
 dir.create(file.path(AQUI, "figuras"), showWarnings = FALSE)
 f_dga <- file.path(base, "01_Datos/Procesados", "Inventarios_UTM19S", "Inventario_DGA_2014_cuenca.gpkg")

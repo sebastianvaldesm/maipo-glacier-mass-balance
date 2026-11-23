@@ -19,7 +19,7 @@ import numpy as np
 import pandas as pd
 from shapely.ops import unary_union
 
-RAIZ = r"C:\Users\sebas\OneDrive\Desktop\Memoria de Titulo"
+RAIZ = r"C:\maipo\proyecto"
 DIR_RGI = os.path.join(RAIZ, "01_Datos/Brutos", "Inventario_RGI")
 DIR_INV = os.path.join(RAIZ, "01_Datos/Procesados", "Inventarios_UTM19S")
 DIR_TAB = os.path.join(RAIZ, "02_Balance_Masa_RM", "Cadena_RM", "tablas")

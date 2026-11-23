@@ -8,10 +8,10 @@
 #      P19_RAMAS="gdem" P19_FASES="2" bash P19_lanzar_cadena_propia.sh
 # Se puede cortar y volver a lanzar: retoma lo hecho. Corre desde una copia de los scripts, asi que
 # editarlos no afecta una corrida en curso.
-M=/c/Users/sebas/Prueba_MMASTER
+M=/c/maipo/trabajo
 CP=$M/cadena_propia
-R="/c/Users/sebas/OneDrive/Desktop/Memoria de Titulo/03_DEM_MicMac"
-AV="/c/Users/sebas/OneDrive/Desktop/Memoria de Titulo/06_Memoria_Final/Metodologias_anteriores/datos"
+R="/c/maipo/proyecto/03_DEM_MicMac"
+AV="/c/maipo/proyecto/06_Memoria_Final/Metodologias_anteriores/datos"
 EC=$CP/en_curso
 if [ "$1" != "--copia" ]; then
     mkdir -p "$CP"
@@ -19,9 +19,9 @@ if [ "$1" != "--copia" ]; then
     exec bash "$EC/P19_lanzar_cadena_propia.sh" --copia
 fi
 S=$EC
-PY=/c/Users/sebas/venvs/xdem/Scripts/python.exe
+PY=/c/maipo/venvs/xdem/Scripts/python.exe
 RS="/c/Program Files/R/R-4.5.1/bin/Rscript.exe"
-H=/c/Users/sebas/miniconda3/envs/hydro
+H=/c/maipo/miniconda3/envs/hydro
 export PROJ_DATA=$(cygpath -w $H/Library/share/proj) GDAL_DATA=$(cygpath -w $H/Library/share/gdal) GDAL_PAM_ENABLED=NO
 export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 MPLBACKEND=Agg
 NPROC=${NPROC:-7}
@@ -75,7 +75,7 @@ for fase in $FASES; do
         if [ $fase = 1 ]; then
             # --- base TanDEM-X ----------------------------------------------------------------------------
             if [ $rama != gdem ]; then
-                B="/c/Users/sebas/OneDrive/Desktop/Memoria de Titulo/01_Datos/Mascara_Estable/MascaraEstable_RM_${rama^^}"
+                B="/c/maipo/proyecto/01_Datos/Mascara_Estable/MascaraEstable_RM_${rama^^}"
                 if [ ! -f "$B/01_Hipsometria_dga.csv" ]; then
                     marca "$rama: base (P16 preparar, P16b, P16 resumen)"
                     pyb "$S/P16_base_tandemx.py" $rama preparar > $CP/logs/P16_${rama}_preparar.log 2>&1 \

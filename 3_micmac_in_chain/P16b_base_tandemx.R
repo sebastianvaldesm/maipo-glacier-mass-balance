@@ -4,7 +4,7 @@
 args <- commandArgs(trailingOnly = TRUE)
 rama <- if (length(args)) args[1] else ""
 if (!rama %in% c("tdx90", "tdx30")) stop("Uso: Rscript P16b_base_tandemx.R tdx90|tdx30")
-base_raiz <- "C:/Users/sebas/OneDrive/Desktop/Memoria de Titulo"
+base_raiz <- "C:/maipo/proyecto"
 cadena <- file.path(base_raiz, "02_Balance_Masa_RM", "Cadena_RM")
 carpeta <- paste0("MascaraEstable_RM_", toupper(rama))
 dir_res <- file.path(base_raiz, "03_DEM_MicMac", "resultados", paste0("P16_base_", rama))

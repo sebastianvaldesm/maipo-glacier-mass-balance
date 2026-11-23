@@ -9,10 +9,10 @@
 # en el flujo de Hugonnet; asi pyddem lee la fecha del nombre.
 # S (carpeta de P02 y P03) se puede cambiar desde fuera, para correr un lote largo con una copia de los scripts.
 # Los L1A se buscan en L1A/volcan y en L1A/cuenca (P11).
-S="${S:-/c/Users/sebas/OneDrive/Desktop/Memoria de Titulo/03_DEM_MicMac/scripts}"
-W=/c/Users/sebas/Prueba_MMASTER/trabajo
-L1A="/c/Users/sebas/Prueba_MMASTER/L1A/volcan /c/Users/sebas/Prueba_MMASTER/L1A/cuenca"
-E=/c/Users/sebas/miniconda3/envs/mmaster
+S="${S:-/c/maipo/proyecto/03_DEM_MicMac/scripts}"
+W=/c/maipo/trabajo/trabajo
+L1A="/c/maipo/trabajo/L1A/volcan /c/maipo/trabajo/L1A/cuenca"
+E=/c/maipo/miniconda3/envs/mmaster
 export S W L1A E BOX="${BOX:-}"
 una() {
     granulos="$1"

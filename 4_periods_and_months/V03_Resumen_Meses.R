@@ -1,10 +1,10 @@
 # V03. Resume la prueba de los meses (Resumen_Meses.csv) y dibuja la Figura 4 del articulo en las dos
 # formas del error.
 # Uso: Rscript V03_Resumen_Meses.R
-base <- "C:/Users/sebas/OneDrive/Desktop/Memoria de Titulo"
+base <- "C:/maipo/proyecto"
 AQUI <- file.path(base, "06_Memoria_Final", "Meses_MicMac")
-VARV <- "C:/Users/sebas/Prueba_MMASTER/variantes_meses_mm"
-RAMA <- "C:/Users/sebas/Prueba_MMASTER/cadena_propia/gdem_cpd/tablas"
+VARV <- "C:/maipo/trabajo/variantes_meses_mm"
+RAMA <- "C:/maipo/trabajo/cadena_propia/gdem_cpd/tablas"
 BASE_T <- file.path(base, "06_Memoria_Final", "Tramos_2010", "corte_2010.5", "tablas")
 dir.create(file.path(AQUI, "figuras"), showWarnings = FALSE)
 leer <- function(d, f) read.csv(file.path(d, f), stringsAsFactors = FALSE)
