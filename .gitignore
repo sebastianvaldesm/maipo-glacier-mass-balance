@@ -1,0 +1,16 @@
+# Only code goes here; the data are in Zenodo
+*.tif
+*.gpkg
+*.npz
+*.rds
+*.hdf
+*.zip
+*.csv
+*.xlsx
+*.docx
+*.pdf
+*.png
+*.jpg
+__pycache__/
+.Rhistory
+.netrc
